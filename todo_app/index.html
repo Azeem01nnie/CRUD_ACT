@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <!-- Form for adding/editing a task -->
+        <form id="task-form">
+            <input type="text" id="task-name" placeholder="Task Name" required>
+            <input type="date" id="start-date" required>
+            <input type="date" id="end-date" required>
+            <input type="hidden" id="task-id"> <!-- Hidden field for task ID -->
+            <button type="submit">Save Task</button>
+        </form>
+
+        <!-- Pending Tasks Section -->
+        <h2>Pending Tasks</h2>
+        <ul id="pending-task-list"></ul>
+
+        <!-- Completed Tasks Section -->
+        <h2>Completed Tasks</h2>
+        <ul id="completed-task-list"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
